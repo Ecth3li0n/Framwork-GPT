@@ -3,11 +3,9 @@
 // See file LICENCE.txt for full license details.
 
 import React from "react";
-import ReactDOM from "react-dom";
-import "./app.scss";
 
-function App() {
+import "./HomeScreen.scss";
+
+export default function HomeScreen() {
   return <h1>Hello World !</h1>;
 }
-
-ReactDOM.render(<App />, document.getElementById("app"));
