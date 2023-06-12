@@ -1,0 +1,1 @@
+You can place her all scripts to build, deploy and others.

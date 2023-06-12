@@ -1,0 +1,6 @@
+node_modules
+dist/bundle.js
+bundle.js.LICENSE.txt
+template-electron-react-darwin-x64
+template-electron-react-linux-x64
+template-electron-react-win32
