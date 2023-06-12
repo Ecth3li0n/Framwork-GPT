@@ -56,6 +56,35 @@ However, I don't have a lot of time these days, so it might take a while.
 
 Thank you all!
 
+### Contributing
+
+We welcome contributions from everyone. Here are a few guidelines to help you get started:
+
+1. Branch Naming Conventions: We use GitFlow naming conventions for branch names. Here are some examples:
+    * feature/<feature-name> for new features.
+    * bugfix/<bug-name> for bug fixes.
+    * hotfix/<hotfix-name> for urgent fixes on the main branch.
+    * release/<version> for preparing new production releases.
+
+2. Commit Messages: Use clear and informative commit messages. Structure your commit messages as follows:
+    * Use the present imperative ("change", "update", "add"... etc) for your verb.
+    * The first line is a brief (< 50 characters) summary of the changes.
+    * Then, leave a blank line.
+    * Finally, provide a more detailed description of the changes if necessary.
+
+For example:
+
+```
+Update README with contribution guidelines
+
+This commit adds a new section to the README about how contributors should submit their changes to the project. It includes information about the branch naming conventions and the commit message formatting.
+```
+
+3. Pull Requests: When a feature or fix is completed on a branch, use a Pull Request (PR) to merge the changes into the dev branch. This gives everyone a chance to review the changes before they are merged into dev.
+Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.
+
+Happy coding!
+
 ## License
 
 Copyright (c) 2023 Ecth3li0n
