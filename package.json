@@ -3,7 +3,7 @@
   "productName": "Framwork GPT",
   "version": "1.0.0",
   "description": "Framworg GPT is the first framwork using GPT-4 for create web applications",
-  "main": "main.js",
+  "main": "src/main/index.js",
   "scripts": {
     "start": "ELECTRON_START_URL=development concurrently \"npm:webpack\" \"npm:electron\"",
     "webpack": "webpack --watch",
@@ -21,7 +21,8 @@
   "dependencies": {
     "electron": "^25.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.12.1"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",

@@ -1,0 +1,48 @@
+@import "../variables.scss";
+
+.navBar {
+  background-color: $color-primary;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    a {
+      text-decoration: none;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      align-items: center;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-primary;
+      }
+
+      li {
+        width: 120px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3em;
+        margin: 0 10px;
+
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

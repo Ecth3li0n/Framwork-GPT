@@ -5,7 +5,7 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/app.js",
+  entry: "./src/renderer/App.js",
   target: "electron-renderer",
   mode: "development",
   module: {
