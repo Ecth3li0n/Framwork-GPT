@@ -1,0 +1,9 @@
+@import "../../../variables.scss";
+
+.aside {
+  background-color: $color-secondary;
+  width: 250px;
+  padding: 10px;
+  box-shadow: 2px 0 10px 0 $color-light-grey;
+  z-index: 1;
+}

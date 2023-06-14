@@ -7,7 +7,7 @@
   "scripts": {
     "start": "ELECTRON_START_URL=development concurrently \"npm:webpack\" \"npm:electron\"",
     "webpack": "webpack --watch",
-    "electron": "wait-on ./dist/bundle.js && electron .",
+    "electron": "wait-on ./dist/bundle.js && electron . --trace-warnings",
     "build": "webpack --mode=production",
     "start-prod": "electron .",
     "start-web": "webpack-dev-server --mode development --open",
@@ -19,7 +19,12 @@
   "author": "sepiol",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "electron": "^25.1.0",
+    "nedb": "^1.8.0",
+    "nedb-promises": "^6.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.12.1"

@@ -7,5 +7,9 @@ import React from "react";
 import "./PromptGenScreen.scss";
 
 export default function PromptGenScreen() {
-  return <h1>Ici on fera du prompt ingénieuring</h1>;
+  return (
+    <div className="screen">
+      <h1>Ici on fera du prompt ingénieuring</h1>
+    </div>
+  );
 }

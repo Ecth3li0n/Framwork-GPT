@@ -7,5 +7,9 @@ import React from "react";
 import "./HomeScreen.scss";
 
 export default function HomeScreen() {
-  return <h1>Hello World !</h1>;
+  return (
+    <div className="screen">
+      <h1>Hello World !</h1>
+    </div>
+  );
 }

@@ -3,26 +3,30 @@
 // See file LICENCE.txt for full license details.
 
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.scss";
 
-import HomeScreen from "./views/HomeScreen";
-import PromptGenScreen from "./views/PromptGenScreen";
-import NavBar from "./components/NavBar";
+import HomeScreen from "./views/HomeScreen/HomeScreen";
+import PromptGenScreen from "./views/PromptGenScreen/PromptGenScreen";
+import NavBar from "./components/NavBar/NavBar";
+import Aside from "./components/AsideScreens/Aside/Aside";
 
 function App() {
   return (
     <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<HomeScreen />} />
-        <Route path="/promptgen" element={<PromptGenScreen />} />
-        <Route path="*" element={<HomeScreen />} />
-      </Routes>
+      <div className="main-layout">
+        <NavBar />
+        <Aside />
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/promptgen" element={<PromptGenScreen />} />
+          <Route path="*" element={<HomeScreen />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("App"));
+createRoot(document.getElementById("App")).render(<App />);
